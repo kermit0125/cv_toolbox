@@ -44,9 +44,6 @@ Project Root/
 ├── requirements.txt
 └── README.md
 
-yaml
-复制
-编辑
 
 ---
 
@@ -61,28 +58,19 @@ python -m venv myenv
 .\myenv\Scripts\activate
 macOS / Linux:
 
-bash
-复制
-编辑
 python3 -m venv myenv
 source myenv/bin/activate
+
+---
 2. Install requirements
-bash
-复制
-编辑
 pip install -r requirements.txt
 📝 How to Run
 Edit the image path in run_toolbox.py:
 
-python
-复制
-编辑
+---
 image_path = "data/your_image.jpg"
 Then run:
 
-bash
-复制
-编辑
 python -m src.run_toolbox
 All results will be saved under outputs/.
 
@@ -97,10 +85,6 @@ SIFT Keypoints
 
 📄 JSON Example
 Sample from features.json:
-
-json
-复制
-编辑
 {
   "num_keypoints": 120,
   "keypoints": [
@@ -113,13 +97,14 @@ json
   ],
   "descriptors": [[...], [...], ...]
 }
+---
 📄 PDF Report
 The generated PDF (report.pdf) summarizes:
 
 Processed images
 
 Number of detected SIFT keypoints
-
+---
 💻 Requirements
 Python 3.8+
 
@@ -130,9 +115,9 @@ NumPy
 FPDF
 
 Matplotlib (optional for plotting)
-
+---
 License
 MIT License
-
+---
 Author
 Keming Xing
