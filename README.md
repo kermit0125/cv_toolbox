@@ -39,7 +39,7 @@ A Python toolbox for basic computer vision operations, including:
 Project Root/
 │
 ├── data/
-│      your_image.jpg
+│      Image Number.jpg
 │
 ├── outputs/
 │      gray.png
@@ -54,7 +54,7 @@ Project Root/
 │      run_toolbox.py
 │
 ├── requirements.txt
-└── README.txt
+└── README.md
 ```
 
 ---
@@ -127,10 +127,10 @@ Sample from `features.json`:
   "num_keypoints": 120,
   "keypoints": [
     {
-      "x": 50.2,
-      "y": 30.1,
-      "size": 2.4,
-      "angle": 45.0
+      "x": 7.169131755828857,
+      "y": 107.95336151123047,
+      "size": 4.4236369132995605,
+      "angle": 118.40936279296875
     }
   ],
   "descriptors": [[...], [...], ...]
