@@ -1,49 +1,61 @@
 # 🖼️ Image Filtering and Feature Extraction Toolbox
 
-A Python toolbox for basic computer vision operations including:
+A Python toolbox for basic computer vision operations, including:
 
-✅ Grayscale conversion  
-✅ Gaussian blur filtering  
-✅ Edge detection (Canny)  
-✅ SIFT feature extraction  
-✅ Saving results as images and JSON  
-✅ Automatically generating a PDF report
+- Grayscale conversion
+- Gaussian blur filtering
+- Edge detection (Canny)
+- SIFT feature extraction
+- Saving results as images and JSON
+- Automatically generating a PDF report
 
 ---
 
 ## 🚀 Features
 
-- **Grayscale Conversion** → Convert RGB images to grayscale.
-- **Gaussian Blur** → Smooth images using a Gaussian kernel.
-- **Edge Detection (Canny)** → Detect edges in images.
-- **SIFT Feature Extraction**
-  - Detect keypoints
-  - Compute descriptors
-  - Visualize features
-  - Export keypoints and descriptors as JSON
-- **PDF Report Generation** → Create a PDF summarizing all results.
+1. **Grayscale Conversion**  
+   Convert RGB images to grayscale.
+
+2. **Gaussian Blur**  
+   Smooth images using a Gaussian kernel.
+
+3. **Edge Detection (Canny)**  
+   Detect edges in images.
+
+4. **SIFT Feature Extraction**  
+    - Detect keypoints
+    - Compute descriptors
+    - Visualize features
+    - Export keypoints and descriptors as JSON
+
+5. **PDF Report Generation**  
+   Compile all results into a single PDF summary.
 
 ---
 
 ## 📂 Project Structure
 
+```
 Project Root/
 │
 ├── data/
-│ └── your_image.jpg
+│      your_image.jpg
+│
 ├── outputs/
-│ ├── gray.png
-│ ├── gaussian_blur.png
-│ ├── canny.png
-│ ├── sift_image.png
-│ ├── features.json
-│ └── report.pdf
+│      gray.png
+│      gaussian_blur.png
+│      canny.png
+│      sift_image.png
+│      features.json
+│      report.pdf
+│
 ├── src/
-│ ├── cv_toolbox.py
-│ └── run_toolbox.py
+│      cv_toolbox.py
+│      run_toolbox.py
+│
 ├── requirements.txt
-└── README.md
-
+└── README.txt
+```
 
 ---
 
@@ -53,38 +65,64 @@ Project Root/
 
 **Windows (PowerShell):**
 
-```powershell
+```
 python -m venv myenv
 .\myenv\Scripts\activate
-macOS / Linux:
+```
 
+**macOS / Linux:**
+
+```
 python3 -m venv myenv
 source myenv/bin/activate
+```
 
 ---
-2. Install requirements
+
+### 2. Install requirements
+
+```
 pip install -r requirements.txt
-📝 How to Run
-Edit the image path in run_toolbox.py:
+```
 
 ---
+
+## 📝 How to Run
+
+Edit the image path in `run_toolbox.py`:
+
+```
 image_path = "data/your_image.jpg"
+```
+
 Then run:
 
+```
 python -m src.run_toolbox
-All results will be saved under outputs/.
+```
 
-📊 Example Outputs
-Grayscale
+All results will be saved under the `outputs/` folder.
 
-Gaussian Blur
+---
 
-Canny Edges
+## 📊 Example Outputs
 
-SIFT Keypoints
+Outputs generated:
 
-📄 JSON Example
-Sample from features.json:
+- gray.png             (grayscale image)
+- gaussian_blur.png    (blurred image)
+- canny.png            (edges detected)
+- sift_image.png       (keypoints visualized)
+- features.json        (keypoints + descriptors)
+- report.pdf           (PDF report with images)
+
+---
+
+## 📄 JSON Example
+
+Sample from `features.json`:
+
+```
 {
   "num_keypoints": 120,
   "keypoints": [
@@ -97,27 +135,26 @@ Sample from features.json:
   ],
   "descriptors": [[...], [...], ...]
 }
+```
+
 ---
-📄 PDF Report
-The generated PDF (report.pdf) summarizes:
 
-Processed images
+## 💻 Requirements
 
-Number of detected SIFT keypoints
+- Python 3.8+
+- OpenCV
+- NumPy
+- FPDF
+- Matplotlib (optional for plotting)
+
 ---
-💻 Requirements
-Python 3.8+
 
-OpenCV
+## License
 
-NumPy
-
-FPDF
-
-Matplotlib (optional for plotting)
----
-License
 MIT License
+
 ---
-Author
+
+## Author
+
 Keming Xing
